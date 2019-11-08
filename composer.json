@@ -1,11 +1,11 @@
 {
-    "name": "weiwei/api-doc",
-    "description": "The ThinkPHP5 Api Doc Package",
+    "name": "cck/api-doc",
+    "description": "The ThinkPHP5 Api Doc Package forked from zhangweiwei0326/api-doc",
     "type": "think-extend",
     "authors": [
         {
-            "name": "weiwei",
-            "email": "1763692101@qq.com"
+            "name": "cck",
+            "email": "liuzhengjian521@qq.com"
         }
     ],
     "license": "MIT",
