@@ -253,7 +253,9 @@ class Doc
         foreach ($data as $name=>$value) {
             $json .= '&nbsp;&nbsp;"'.$name.'":'.$value.',<br>';
         }
-        $json .= '&nbsp;&nbsp;"data":{<br/>';
+        if(!empty($data)){
+            $json .= '&nbsp;&nbsp;"data":{<br/>';
+        }
         $returns = isset($doc['return']) ? $doc['return'] : [];
         foreach ($returns as $val)
         {
@@ -264,7 +266,9 @@ class Doc
                 $json .= '&nbsp;&nbsp;&nbsp;&nbsp;' . $this->string2json(trim($name), $value);
             }
         }
-        $json .= '&nbsp;&nbsp;}<br/>';
+        if(!empty($data)){
+            $json .= '&nbsp;&nbsp;}<br/>';
+        }
         $json .= '}';
         return $json;
     }
